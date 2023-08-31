@@ -13,11 +13,13 @@ Metric | Start Render | First Contentful Paint | Speed Index | Largest Contentfu
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- 
 Initial Report | 5.3s | 5.3s | 8.2s | 18.9s | 0.231 | 35.7s | 0.6s | 4264kb | 33.0s | 12
 3rd Party Static Assets  | 4.9s | 4.9s | 7.2s | 18.3s | 0 | 27s | 0.6s | 4817kb | 29.8s | 25
+Image Resizing  | 4.4s | 4.4s | 4.9s | 6.2 | 0 | 12s | 0.6s | 658kb | 14s | 38
 
 
 ## Notes
 1. HTTP Requests - Http/2 instead of HTTP/1 - Able to reuse same connection while fetching mutiple resources from same server. https://web.dev/performance-http2/
-1. 
+1. 3rd Party Static Assets - Retrieve static assests from a single server. It's beneficial to have local copies of external dependencies and serve from own server. Anyway we would need to deliver content through CDN for our application artifacts.
+1. Image Resizing - Having multiple image sizes for various devices like mobile and desktop.
 
 ## References
 
