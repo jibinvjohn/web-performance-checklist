@@ -1,3 +1,6 @@
 node_modules
 www/*.html
 .idea
+www/img/**/*.jpg
+www/img/**/*.webp
+www/img/**/*.svg
