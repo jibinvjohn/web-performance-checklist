@@ -40,6 +40,7 @@ https://web.dev/font-best-practices/
 1. Lazy Loading - load an asset only when its needed. https://web.dev/browser-level-image-lazy-loading/
 1. Remove unused CSS - Use coverage dev tools to understand how much is unused and remove the unneeded. Use purgecss to remove unwanted.
 1. Caching Behaviour - Provide ideal cache-control headers. https://web.dev/love-your-cache/
+1. Next Steps - CDN, Cache using Service Workers, Navigation timing API 
 
 ## References
 
