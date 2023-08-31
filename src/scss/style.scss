@@ -1,3 +1,5 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
+
 :root {
 	--mle-red: #E8412E;
 	--mle-light-grey: #f7f7f7;
@@ -104,25 +106,25 @@ Header Component
 		padding: 15px;
 		text-align: center;
 	}
-
+	
 	.header__nav {
 		max-height: 0px;
 		transition: max-height 0.25s;
 		overflow: hidden;
 	}
-
+	
 	.header.is-active .header__nav {
 		max-height: 500px;
 	}
 }
 
 @media (min-width: 768px) {
-
+	
 	.header__contact {
 		min-width: 400px;
 		background-color: transparent;
 	}
-
+	
 	.header__nav {
 		color: inherit;
 		background-color: transparent;
@@ -130,20 +132,20 @@ Header Component
 		border-left-width: 0;
 		border-right-width: 0;
 	}
-
+	
 	.header__nav-item {
 		margin-bottom: -1px;
 		border-left: 1px solid var(--mle-grey);
 	}
-
+	
 	.header__nav-item.is-active {
 		background-color: var(--mle-light-grey);
 	}
-
+	
 	.header__nav-item:last-child {
 		border-right: 1px solid var(--mle-grey);
 	}
-
+	
 }
 
 /*
@@ -209,7 +211,7 @@ Extend Carousel Component
 */
 
 .carousel-caption {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 	right: auto;
 	left: 0;
 	bottom: 0;
@@ -311,7 +313,7 @@ Blog Header
 .blog-header:before {
 	content: "";
 	display: block;
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;

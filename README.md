@@ -16,6 +16,7 @@ Initial Report | 5.3s | 5.3s | 8.2s | 18.9s | 0.231 | 35.7s | 0.6s | 4264kb | 33
 Image Resizing  | 4.4s | 4.4s | 4.9s | 6.2s | 0 | 12s | 0.6s | 658kb | 14s | 38
 Image Optimization  | 4.5s | 4.5s | 4.8s | 5.8s | 0 | 9.6s | 0.6s | 615kb | 13s | 46
 Async/Defer JS & Resource Improvements  | 3.9s | 3.8s | 4.6s | 4.2s | 0 | 6.5s | 0.4s | 569kb | 12s | 70
+Text Asset Optimization  | 3.7s | 3.7s | 3.8s | 3.9s | 0 | 2.6s | 0.6s | 472kb | 12.5s | 79
 
 
 ## Notes
@@ -25,7 +26,9 @@ Async/Defer JS & Resource Improvements  | 3.9s | 3.8s | 4.6s | 4.2s | 0 | 6.5s |
 1. Optimize Images - Optimize images using imagemin or other tools for removing unneeded metadata and othe details. Have progressive JPGs. Have newer file formats like webp. Serve webp when possible else fallbacks to jpg.
 1. Resource Hints - DNS Prefetch, Preconnect, Prefetch, Preload, Prerender
 1. Async/Defer Javascript - https://web.dev/efficiently-load-third-party-javascript/
-1. 
+1. Text Compression - Brotli and Gzip https://web.dev/reduce-network-payloads-using-text-compression/
+1. Text Asset Optimization - Combine multiple files into single using rollup to ensure one large file is downloaded which enables better compression as well.
+
 ## References
 
 1. https://web.dev/measure/
