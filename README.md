@@ -12,6 +12,7 @@
 Metric | Start Render | First Contentful Paint | Speed Index | Largest Contentful Paint | Cumulative Layout Shift  | Time to Interactive | Total Blocking Time | Bytes Downloaded | Fully Loaded | Lighthouse Score 
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- 
 Initial Report | 5.3s | 5.3s | 8.2s | 18.9s | 0.231 | 35.7s | 0.6s | 4264kb | 33.0s | 12
+3rd Party Static Assets  | 4.9s | 4.9s | 7.2s | 18.3s | 0 | 27s | 0.6s | 4817kb | 29.8s | 25
 
 
 ## Notes
