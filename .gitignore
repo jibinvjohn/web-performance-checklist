@@ -4,4 +4,8 @@ www/*.html
 www/img/**/*.jpg
 www/img/**/*.webp
 www/img/**/*.svg
-www/style.css
+www/*.css
+www/*.js
+www/fonts/*
+www/rev-manifest.json
+package-lock.json
