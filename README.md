@@ -17,7 +17,7 @@ Image Resizing  | 4.4s | 4.4s | 4.9s | 6.2s | 0 | 12s | 0.6s | 658kb | 14s | 38
 Image Optimization  | 4.5s | 4.5s | 4.8s | 5.8s | 0 | 9.6s | 0.6s | 615kb | 13s | 46
 Async/Defer JS & Resource Improvements  | 3.9s | 3.8s | 4.6s | 4.2s | 0 | 6.5s | 0.4s | 569kb | 12s | 70
 Text Asset Optimization  | 3.7s | 3.7s | 3.8s | 3.9s | 0 | 2.6s | 0.6s | 472kb | 12.5s | 79
-
+Critical CSS  | 2.2s | 2.2s | 2.6s | 2.8s | 0.185 | 2.7s | 0.7s | 476kb | 11s | 81
 
 ## Notes
 1. HTTP Requests - Http/2 instead of HTTP/1 - Able to reuse same connection while fetching mutiple resources from same server. https://web.dev/performance-http2/
@@ -28,6 +28,7 @@ Text Asset Optimization  | 3.7s | 3.7s | 3.8s | 3.9s | 0 | 2.6s | 0.6s | 472kb |
 1. Async/Defer Javascript - https://web.dev/efficiently-load-third-party-javascript/
 1. Text Compression - Brotli and Gzip https://web.dev/reduce-network-payloads-using-text-compression/
 1. Text Asset Optimization - Combine multiple files into single using rollup to ensure one large file is downloaded which enables better compression as well.
+1. Critical CSS - Seperate out critical css and load the remaining similar to async/defer. Using critical npm package.
 
 ## References
 
